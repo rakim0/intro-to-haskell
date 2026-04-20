@@ -60,9 +60,3 @@ More `IO` and recursion exercises, including boolean aggregation and recursive a
 ### Week 12
 
 A simplified Wordle-style game with hint generation and repeated guessing.
-
-## Repository Layout
-
-- `week0(random)/`: extra practice and warm-up functions.
-- `week1/` to `week12/`: weekly course work, examples, and assignments.
-- `README.md`: course overview and progress summary.
