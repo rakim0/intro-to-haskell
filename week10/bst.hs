@@ -31,8 +31,9 @@ deleteMax :: BSTDict a b -> ((a, b), BSTDict a b)
 deleteMax (Node l kv Nil) =
   (kv, l)
 deleteMax (Node l kv r) =
-  let (maxKV, newRight) = deleteMax r
-   in (maxKV, Node l kv newRight)
+  (maxKV, Node l kv newRight)
+  where
+    (maxKV, newRight) = deleteMax r
 
 delete :: (Ord a) => a -> BSTDict a b -> BSTDict a b
 delete _ Nil = Nil
